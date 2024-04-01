@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="song.css">
+    <script src="https://kit.fontawesome.com/b498e2bbd7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+       <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <img src="Yuka-Baby-you (1).jpg"  class="song-img">
+        <h1>Baby You</h1>
+        <p>ft. YUKA</p>
+
+        <audio  id="song">
+            <source src="C:\Users\Kavya Verma\Desktop\javascriptproject\song player\有華「Baby you」Music Video(Yuka Ver.).mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+        <div class="control">
+            <div><i class="fa-solid fa-backward-step"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward-step"></i></i></div>
+        </div>
+       </div>
+    </div>
+
+<script src="song.js"></script>
+</body>
+</html>
